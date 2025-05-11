@@ -1,0 +1,619 @@
+[gd_scene load_steps=18 format=3 uid="uid://s5vns0wicat"]
+
+[ext_resource type="PackedScene" uid="uid://cv55pu8y6ugkk" path="res://Scenes/grid.tscn" id="1_ci6au"]
+[ext_resource type="Script" uid="uid://beir58h6km0lg" path="res://Scripts/map.gd" id="1_ie368"]
+[ext_resource type="PackedScene" uid="uid://bdfoxbw8e2n02" path="res://Scenes/chess.tscn" id="2_26yhd"]
+[ext_resource type="Script" uid="uid://crjralw5a4yb6" path="res://Scripts/grid_manager.gd" id="2_x5dfk"]
+[ext_resource type="Texture2D" uid="uid://6teymeluu23o" path="res://Assects/帅.png" id="3_4c2oa"]
+[ext_resource type="Texture2D" uid="uid://dthffs3jtjl5b" path="res://Assects/将.png" id="3_p3ir5"]
+[ext_resource type="Script" uid="uid://csbr1jot0sae3" path="res://Scripts/chess_manager.gd" id="4_fls3e"]
+[ext_resource type="Texture2D" uid="uid://dyorxkqc0itni" path="res://Assects/仕.png" id="4_olcgw"]
+[ext_resource type="Texture2D" uid="uid://b062pemy1h7dt" path="res://Assects/相.png" id="5_dlo4w"]
+[ext_resource type="Texture2D" uid="uid://hlalt6mm7mlq" path="res://Assects/马.png" id="6_q6lx1"]
+[ext_resource type="Texture2D" uid="uid://da1raqk16i0mp" path="res://Assects/车.png" id="7_5qtum"]
+[ext_resource type="Texture2D" uid="uid://t4dji06axeic" path="res://Assects/炮.png" id="8_ie368"]
+[ext_resource type="Texture2D" uid="uid://biofuxagsjtju" path="res://Assects/士.png" id="9_5qtum"]
+[ext_resource type="Texture2D" uid="uid://ctvi55h5ofjy8" path="res://Assects/兵.png" id="9_x5dfk"]
+[ext_resource type="Texture2D" uid="uid://co6t17qfdl8d" path="res://Assects/象.png" id="10_ie368"]
+[ext_resource type="Texture2D" uid="uid://i28xj457mooc" path="res://Assects/卒.png" id="13_x5dfk"]
+[ext_resource type="Script" uid="uid://bo407tkxw8l2t" path="res://Scripts/turn_inspector.gd" id="17_k63oc"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_ie368")
+
+[node name="GridManager" type="Node" parent="."]
+script = ExtResource("2_x5dfk")
+
+[node name="Grid" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 12)
+
+[node name="Grid2" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 12)
+
+[node name="Grid3" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 12)
+
+[node name="Grid4" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 12)
+
+[node name="Grid5" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 12)
+
+[node name="Grid6" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 12)
+
+[node name="Grid7" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 12)
+
+[node name="Grid8" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 12)
+
+[node name="Grid9" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 12)
+
+[node name="Grid10" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 36)
+
+[node name="Grid11" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 36)
+
+[node name="Grid12" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 36)
+
+[node name="Grid13" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 36)
+
+[node name="Grid14" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 36)
+
+[node name="Grid15" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 36)
+
+[node name="Grid16" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 36)
+
+[node name="Grid17" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 36)
+
+[node name="Grid18" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 36)
+
+[node name="Grid19" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 60)
+
+[node name="Grid20" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 60)
+
+[node name="Grid21" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 60)
+
+[node name="Grid22" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 60)
+
+[node name="Grid23" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 60)
+
+[node name="Grid24" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 60)
+
+[node name="Grid25" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 60)
+
+[node name="Grid26" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 60)
+
+[node name="Grid27" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 60)
+
+[node name="Grid28" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 84)
+
+[node name="Grid29" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 84)
+
+[node name="Grid30" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 84)
+
+[node name="Grid31" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 84)
+
+[node name="Grid32" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 84)
+
+[node name="Grid33" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 84)
+
+[node name="Grid34" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 84)
+
+[node name="Grid35" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 84)
+
+[node name="Grid36" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 84)
+
+[node name="Grid37" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 108)
+
+[node name="Grid38" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 108)
+
+[node name="Grid39" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 108)
+
+[node name="Grid40" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 108)
+
+[node name="Grid41" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 108)
+
+[node name="Grid42" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 108)
+
+[node name="Grid43" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 108)
+
+[node name="Grid44" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 108)
+
+[node name="Grid45" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 108)
+
+[node name="Grid46" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 132)
+
+[node name="Grid47" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 132)
+
+[node name="Grid48" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 132)
+
+[node name="Grid49" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 132)
+
+[node name="Grid50" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 132)
+
+[node name="Grid51" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 132)
+
+[node name="Grid52" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 132)
+
+[node name="Grid53" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 132)
+
+[node name="Grid54" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 132)
+
+[node name="Grid55" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 156)
+
+[node name="Grid56" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 156)
+
+[node name="Grid57" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 156)
+
+[node name="Grid58" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 156)
+
+[node name="Grid59" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 156)
+
+[node name="Grid60" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 156)
+
+[node name="Grid61" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 156)
+
+[node name="Grid62" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 156)
+
+[node name="Grid63" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 156)
+
+[node name="Grid64" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 180)
+
+[node name="Grid65" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 180)
+
+[node name="Grid66" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 180)
+
+[node name="Grid67" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 180)
+
+[node name="Grid68" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 180)
+
+[node name="Grid69" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 180)
+
+[node name="Grid70" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 180)
+
+[node name="Grid71" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 180)
+
+[node name="Grid72" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 180)
+
+[node name="Grid73" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 204)
+
+[node name="Grid74" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 204)
+
+[node name="Grid75" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 204)
+
+[node name="Grid76" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 204)
+
+[node name="Grid77" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 204)
+
+[node name="Grid78" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 204)
+
+[node name="Grid79" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 204)
+
+[node name="Grid80" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 204)
+
+[node name="Grid81" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 204)
+
+[node name="Grid82" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(12, 228)
+
+[node name="Grid83" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(36, 228)
+
+[node name="Grid84" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(60, 228)
+
+[node name="Grid85" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(84, 228)
+
+[node name="Grid86" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(108, 228)
+
+[node name="Grid87" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(132, 228)
+
+[node name="Grid88" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(156, 228)
+
+[node name="Grid89" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(180, 228)
+
+[node name="Grid90" parent="GridManager" instance=ExtResource("1_ci6au")]
+position = Vector2(204, 228)
+
+[node name="ChessManager" type="Node" parent="."]
+script = ExtResource("4_fls3e")
+
+[node name="chess" parent="ChessManager" instance=ExtResource("2_26yhd")]
+y_sort_enabled = true
+position = Vector2(108, 12)
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("3_4c2oa")
+
+[node name="chess2" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(132, 12)
+chess = 1
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess2" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("4_olcgw")
+
+[node name="chess3" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(84, 12)
+chess = 1
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess3" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("4_olcgw")
+
+[node name="chess4" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(60, 12)
+chess = 6
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess4" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("5_dlo4w")
+
+[node name="chess5" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(156, 12)
+chess = 6
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess5" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("5_dlo4w")
+
+[node name="chess6" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(180, 12)
+chess = 5
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess6" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("6_q6lx1")
+
+[node name="chess7" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(36, 12)
+chess = 5
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess7" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("6_q6lx1")
+
+[node name="chess8" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(12, 12)
+chess = 4
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess8" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("7_5qtum")
+
+[node name="chess9" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(204, 12)
+chess = 4
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess9" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("7_5qtum")
+
+[node name="chess17" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(108, 228)
+
+[node name="Sprite2D" parent="ChessManager/chess17" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("3_p3ir5")
+
+[node name="chess18" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(132, 228)
+chess = 1
+
+[node name="Sprite2D" parent="ChessManager/chess18" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_5qtum")
+
+[node name="chess19" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(84, 228)
+chess = 1
+
+[node name="Sprite2D" parent="ChessManager/chess19" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_5qtum")
+
+[node name="chess20" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(60, 228)
+chess = 6
+
+[node name="Sprite2D" parent="ChessManager/chess20" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("10_ie368")
+
+[node name="chess21" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(156, 228)
+chess = 6
+
+[node name="Sprite2D" parent="ChessManager/chess21" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("10_ie368")
+
+[node name="chess22" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(180, 228)
+chess = 5
+
+[node name="Sprite2D" parent="ChessManager/chess22" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("6_q6lx1")
+
+[node name="chess23" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, 228)
+chess = 5
+
+[node name="Sprite2D" parent="ChessManager/chess23" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("6_q6lx1")
+
+[node name="chess24" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(12, 228)
+chess = 4
+
+[node name="Sprite2D" parent="ChessManager/chess24" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("7_5qtum")
+
+[node name="chess25" parent="ChessManager" instance=ExtResource("2_26yhd")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(204, 228)
+chess = 4
+
+[node name="Sprite2D" parent="ChessManager/chess25" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("7_5qtum")
+
+[node name="chess10" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(180, 60)
+chess = 3
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess10" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("8_ie368")
+
+[node name="chess11" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(36, 60)
+chess = 3
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess11" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("8_ie368")
+
+[node name="chess31" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(180, 180)
+chess = 3
+
+[node name="Sprite2D" parent="ChessManager/chess31" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("8_ie368")
+
+[node name="chess32" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(36, 180)
+chess = 3
+
+[node name="Sprite2D" parent="ChessManager/chess32" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("8_ie368")
+
+[node name="chess12" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(12, 84)
+chess = 2
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess12" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_x5dfk")
+
+[node name="chess13" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(60, 84)
+chess = 2
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess13" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_x5dfk")
+
+[node name="chess14" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(108, 84)
+chess = 2
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess14" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_x5dfk")
+
+[node name="chess15" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(156, 84)
+chess = 2
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess15" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_x5dfk")
+
+[node name="chess16" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(204, 84)
+chess = 2
+RedOrBlack = true
+
+[node name="Sprite2D" parent="ChessManager/chess16" index="0"]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("9_x5dfk")
+
+[node name="chess26" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(12, 156)
+chess = 2
+
+[node name="Sprite2D" parent="ChessManager/chess26" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("13_x5dfk")
+
+[node name="chess27" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(60, 156)
+chess = 2
+
+[node name="Sprite2D" parent="ChessManager/chess27" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("13_x5dfk")
+
+[node name="chess28" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(108, 156)
+chess = 2
+
+[node name="Sprite2D" parent="ChessManager/chess28" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("13_x5dfk")
+
+[node name="chess29" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(156, 156)
+chess = 2
+
+[node name="Sprite2D" parent="ChessManager/chess29" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("13_x5dfk")
+
+[node name="chess30" parent="ChessManager" instance=ExtResource("2_26yhd")]
+position = Vector2(204, 156)
+chess = 2
+
+[node name="Sprite2D" parent="ChessManager/chess30" index="0"]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("13_x5dfk")
+
+[node name="turn_inspector" type="Label" parent="."]
+offset_left = 217.0
+offset_top = 97.0
+offset_right = 336.0
+offset_bottom = 212.0
+text = "当前轮到：红/黑"
+script = ExtResource("17_k63oc")
+
+[editable path="ChessManager/chess"]
+[editable path="ChessManager/chess2"]
+[editable path="ChessManager/chess3"]
+[editable path="ChessManager/chess4"]
+[editable path="ChessManager/chess5"]
+[editable path="ChessManager/chess6"]
+[editable path="ChessManager/chess7"]
+[editable path="ChessManager/chess8"]
+[editable path="ChessManager/chess9"]
+[editable path="ChessManager/chess17"]
+[editable path="ChessManager/chess18"]
+[editable path="ChessManager/chess19"]
+[editable path="ChessManager/chess20"]
+[editable path="ChessManager/chess21"]
+[editable path="ChessManager/chess22"]
+[editable path="ChessManager/chess23"]
+[editable path="ChessManager/chess24"]
+[editable path="ChessManager/chess25"]
+[editable path="ChessManager/chess10"]
+[editable path="ChessManager/chess11"]
+[editable path="ChessManager/chess31"]
+[editable path="ChessManager/chess32"]
+[editable path="ChessManager/chess12"]
+[editable path="ChessManager/chess13"]
+[editable path="ChessManager/chess14"]
+[editable path="ChessManager/chess15"]
+[editable path="ChessManager/chess16"]
+[editable path="ChessManager/chess26"]
+[editable path="ChessManager/chess27"]
+[editable path="ChessManager/chess28"]
+[editable path="ChessManager/chess29"]
+[editable path="ChessManager/chess30"]

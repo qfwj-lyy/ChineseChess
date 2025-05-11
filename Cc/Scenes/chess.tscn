@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdfoxbw8e2n02"]
+
+[ext_resource type="Script" uid="uid://ctdiuo36uxi8g" path="res://Scripts/chess.gd" id="1_2bohx"]
+[ext_resource type="Texture2D" uid="uid://bosdh7qalg5p5" path="res://Assects/测试格子.png" id="2_qndib"]
+
+[node name="chess" type="Node2D"]
+script = ExtResource("1_2bohx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="circle" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+self_modulate = Color(1, 1, 1, 0.462745)
+z_index = 5
+texture = ExtResource("2_qndib")
