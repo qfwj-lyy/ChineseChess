@@ -19,7 +19,9 @@ func initialize(Parent) :
 	index = Vector2i(int(position.x - Global.StartPosition.x)/Global.gap , int(position.y - Global.StartPosition.y)/Global.gap)
 	chess = grid_manager.map.GetChess(index)
 
-
+func update_chess():
+	chess = grid_manager.map.GetChess(index)
+	
 func _on_area_2d_mouse_entered() -> void:
 	MouseIn = true
 
@@ -177,6 +179,8 @@ func _input(event: InputEvent) -> void:
 			chess.position = position
 			chess.index = index
 			chess.change_circle_visible()
+			for grid in grid_manager.get_children():
+				grid.update_chess()
 			Global.CurrentChess = null
 			Global.is_red_turn = not Global.is_red_turn
 		else :
